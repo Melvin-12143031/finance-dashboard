@@ -1,0 +1,95 @@
+
+:root {
+  /* Backgrounds */
+  --color-background: #f7f8f5;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f3f5f1;
+
+  /* Text */
+  --color-text-primary: #202720;
+  --color-text-secondary: #737c72;
+  --color-text-muted: #9aa198;
+
+  /* Borders and shadows */
+  --color-border: #e8ebe5;
+  --shadow-card: 0 4px 20px rgba(30, 45, 30, 0.04);
+  --shadow-card-hover: 0 8px 28px rgba(30, 45, 30, 0.08);
+
+  /* Primary accent */
+  --color-primary: #287a52;
+  --color-primary-hover: #206342;
+  --color-primary-light: #eaf4ed;
+
+  /* Income and expense */
+  --color-income: #218653;
+  --color-income-light: #e9f6ee;
+  --color-expense: #d65b55;
+  --color-expense-light: #fdf0ef;
+
+  /* Border radius */
+  --radius-card: 16px;
+  --radius-input: 10px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global typography and colors */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Consistent form typography */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Media elements */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Accessible keyboard focus */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(40, 122, 82, 0.3);
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
