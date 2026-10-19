@@ -1,16 +1,144 @@
-# React + Vite
+# Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal finance dashboard built with **React and Vite**. Track income and expenses, manage transactions, and get a clearer view of your money through a clean, intuitive interface.
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://finance-dashboard-muieowj5y-melvin-cc36.vercel.app/">
+    <strong>🚀 Live Demo</strong>
+  </a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview
 
-## React Compiler
+![Finance Dashboard Screenshot](public/screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Financial Summary** — View your total balance, income, and expenses at a glance.
+- **Transaction Management** — Add, edit, and delete transactions.
+- **Search Transactions** — Find transactions quickly by searching.
+- **Filter Transactions** — Filter transactions by type.
+- **Confirmation Dialogs** — Confirm deletions before removing transactions.
+- **Toast Notifications** — Receive feedback when transactions are added, updated, or deleted.
+- **Persistent Storage** — Keep transaction data saved in the browser using `localStorage`.
+- **Responsive Design** — Enjoy a consistent experience on desktop, tablet, and mobile.
+- **Modern UI** — A clean interface with a cohesive green color palette.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- Lucide React — icons
+- React Hot Toast — notifications
+- Browser `localStorage` — data persistence
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- npm (included with Node.js)
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Melvin-12143031/finance-dashboard.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd finance-dashboard
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL shown in your terminal.
+
+### Production Build
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+To check the code with ESLint, run:
+
+```bash
+npm run lint
+```
+
+## 📁 Project Structure
+
+```text
+finance-dashboard/
+├── public/
+│   ├── favicon.png
+│   └── screenshot.png
+├── src/
+│   ├── components/
+│   │   ├── AppToaster.jsx
+│   │   ├── DashboardHeader.jsx
+│   │   ├── DeleteTransactionDialog.jsx
+│   │   ├── Footer.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── SummaryCards.jsx
+│   │   ├── TransactionFilter.jsx
+│   │   ├── TransactionForm.jsx
+│   │   ├── TransactionItem.jsx
+│   │   ├── TransactionList.jsx
+│   │   └── TransactionModal.jsx
+│   ├── data/
+│   │   └── transactions.js
+│   ├── hooks/
+│   │   └── useLocalStorage.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## 💾 Data Storage
+
+The application uses the browser's `localStorage` to persist transaction data between visits and page refreshes.
+
+**Note:** Transactions are stored locally in the current browser. They are not synced across devices or user accounts, and clearing browser storage may remove the saved data.
+
+## 🌐 Deployment
+
+- **Live Demo:** [Finance Dashboard](https://finance-dashboard-muieowj5y-melvin-cc36.vercel.app/)
+- **Source Code:** [GitHub Repository](https://github.com/Melvin-12143031/finance-dashboard)
+- **Hosting:** Vercel
+
+## 👨‍💻 Author
+
+**Melvin**
+
+Explore more of my projects on [GitHub](https://github.com/Melvin-12143031).
+
+---
+
+*Built with React, Vite, and a focus on clean UI, reusable components, and responsive design.*
